@@ -1,0 +1,24 @@
+<div *ngIf="countryDetails">
+    <div class="container">
+        <h4>Country Details</h4>
+        <div class="card">
+            <div class="card-header">
+                {{countryDetails.countryName}}
+                <div class="flag">
+                    <img [src]="countryDetails.flag" class="card-img-top" alt="{{countryDetails.countryName}}">
+                </div>
+            </div>
+            <div class="card-body">
+                <p><strong>Capital - </strong>{{countryDetails.capital}}</p>
+                <p><strong>Population - </strong>{{countryDetails.population}}</p>
+                <p><strong>Currency Detail -</strong></p>
+                <ul>
+                    <li><strong>Name - </strong>{{currencies.name}}</li>
+                    <li><strong>Code - </strong>{{currencies.code}}</li>
+                    <li><strong>Symbol - </strong>{{currencies.symbol}}</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>

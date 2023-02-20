@@ -1,0 +1,8 @@
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">{{label}}</label>
+  <select class="form-control form-select" id="exampleFormControlInput1"(change)="onChangeRegions($event.target)">
+    <option selected disabled> Please select from list</option>
+    <option *ngFor="let data of dropdownData" value="{{data.name}}">{{data.name}}</option>
+  </select>
+</div>

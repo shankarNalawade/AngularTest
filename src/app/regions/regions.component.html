@@ -1,0 +1,11 @@
+
+<app-dropdown
+  [label]="regionsLabel"
+  [dropdownData]="regions">
+</app-dropdown>
+
+<app-dropdown
+  [label]="countryLabel"
+  [dropdownData]="countriesMap" *ngIf="countriesMap.length > 0">
+</app-dropdown>
+
